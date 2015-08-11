@@ -52,5 +52,10 @@ namespace phokinect
 
             }
         }
+
+        private void btnskeleton_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("Cette fonctionnalité est en cours de développement ! ", "Information", MessageBoxButton.OK, MessageBoxImage.Information);
+        }
     }
 }
