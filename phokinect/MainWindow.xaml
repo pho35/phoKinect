@@ -1,0 +1,21 @@
+﻿<Window x:Class="phokinect.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="498" Width="787" Loaded="Window_Loaded">
+    <Grid>
+        <Image x:Name="logo" HorizontalAlignment="Left" Height="100" Margin="162,10,0,0" VerticalAlignment="Top" Width="461" Source="Image/765px-Kinect_logo.svg.png"/>
+        <Grid HorizontalAlignment="Left" Height="198" Margin="10,142,0,0" VerticalAlignment="Top" Width="759">
+            <Button x:Name="btnwebcam" Content="Webcam" HorizontalAlignment="Left" Margin="98,44,0,0" VerticalAlignment="Top" Width="175" Height="103" Click="btnwebcam_Click"/>
+            <Button x:Name="btnskeleton" Content="Capture Squelette" HorizontalAlignment="Left" Margin="470,44,0,0" VerticalAlignment="Top" Width="175" Height="103"/>
+        </Grid>
+        <Button x:Name="btnrq" HorizontalAlignment="Left" Margin="345,358,0,0" VerticalAlignment="Top" Width="75" Height="72" Click="btnrq_Click">
+            <StackPanel>
+                <Image Source="Image/porte-sortie-icone-7442-48.png" />
+            </StackPanel>
+        </Button>
+        <Label x:Name="lblerror" Content="test" HorizontalAlignment="Left" Margin="10,115,0,326" VerticalAlignment="Center" Height="27" Width="759" Foreground="#FFCB2424" FontWeight="Bold" VerticalContentAlignment="Center"/>
+        <Label x:Name="lblauteur" Content="Conçu par Pierre HO - 08/2015" HorizontalAlignment="Left" Margin="10,432,0,0" VerticalAlignment="Top" Width="175"/>
+        <Label x:Name="lblVersion" Content="V 1.0" HorizontalAlignment="Center" Margin="731,432,0,0" VerticalAlignment="Top"/>
+
+    </Grid>
+</Window>
